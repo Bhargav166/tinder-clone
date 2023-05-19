@@ -6,6 +6,7 @@
 .tinder__logo {
     width: 60px;
     object-fit: contain;
+    user-select: none;
 }
 
 .header_icons {

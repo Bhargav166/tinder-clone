@@ -2,7 +2,7 @@ import React from 'react'
 import PersonIcon from '@mui/icons-material/Person';
 import ForumIcon from '@material-ui/icons/Forum';
 import './Header.css'
-import TinderLogo from './images/tinder_logo.png'
+import TinderLogo from '../images/tinder_logo.png'
 import IconButton from '@mui/material/IconButton';
 
 function Header() {

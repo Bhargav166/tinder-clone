@@ -1,17 +1,18 @@
 import './App.css';
-import Header from './Header'
+import Header from './components/Header'
+import TinderCard from './components/TinderCard';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-
+      <Header />
       <BrowserRouter>
         <Routes>
-          {/* Header */}
-          <Route index path='/' element={<Header />} />
 
           {/* Tinder Cards */}
+          <Route index path='/' element={<TinderCard />} />
+
           {/* Buttons below tinder cards */}
 
           {/* Chats screen */}
