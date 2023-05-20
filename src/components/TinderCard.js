@@ -10,11 +10,15 @@ function TinderCard() {
     const [people, setPeople] = useState([]);
 
     useEffect(() => {
-        const q = query(collection(database, 'people'))
-        onSnapshot(q, (querySnapshot) => {
+        const q = query(collection(database, 'people'));
+        const unsubscribe = onSnapshot(q, (querySnapshot) => {
             setPeople(querySnapshot.docs.map(doc => doc.data()));
         });
-    }, [])
+    
+        return () => {
+            unsubscribe(); // Cleanup function unsubscribes from the snapshot listener
+        };
+    }, []);
 
 
     return (

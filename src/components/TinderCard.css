@@ -2,18 +2,18 @@
     position: relative;   
     width: min(600px, 75vw);
     padding: 20px;
-    height: 60vh;
+    height: 55vh;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 53px 0px rgba(0, 0, 0, 0.2);
     user-select: none;
 }
 
 .tinder_card_container {
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 1%;
 }
 
 .swipe_card {
@@ -24,5 +24,5 @@
     position: absolute;
     bottom: 10px;
     font-size: calc(1rem + 0.7vw);
-    color: #ff5f61;
+    color: white;
 }
