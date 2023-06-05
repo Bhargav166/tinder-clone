@@ -4,11 +4,12 @@
 }
 
 .tinder__logo {
-    width: 60px;
-    object-fit: contain;
+    width: 70px;
+    position: relative;
+    top: 30px;
     user-select: none;
 }
 
 .header_icons {
-    padding: 20px;
+    padding: 25px;
 }
